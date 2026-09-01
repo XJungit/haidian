@@ -60,6 +60,8 @@
         "submissions/XJungit/jingzhang-ai-innovation-belt/self_check.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/sources.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/standard_matrix.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/pilot-readiness-fixtures.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/pilot-readiness-ledger.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-fixtures.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-spec.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-tabletop-run.js",
@@ -69,7 +71,7 @@
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 4000073,
+      "total_bytes": 4129354,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,16 +144,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 15,
-        "known_metric_refs_required": 14,
+        "design_depth_items": 16,
+        "known_metric_refs_required": 17,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 30,
+          "source": 31,
           "standard": 4,
-          "depth": 17,
+          "depth": 18,
           "data": 11,
-          "metric": 4
+          "metric": 6
         }
       }
     },

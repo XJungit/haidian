@@ -1,7 +1,7 @@
 {
   "spec_id": "seb-localized-jingzhang-ai-innovation-belt",
-  "spec_name_zh": "京张AI创新带·SEB本地化判据集（v1.8采用实现）",
-  "spec_name_en": "SEB Localized Criteria Set — Jing-Zhang AI Innovation Belt (adoption implementation)",
+  "spec_name_zh": "京张AI创新带·SEB本地化判据集（v1.12采用实现）",
+  "spec_name_en": "SEB Localized Criteria Set - Jing-Zhang AI Innovation Belt (adoption implementation v1.12)",
   "derived_from": {
     "spec_id": "service-equivalence-baseline",
     "version": "0.5.0",
@@ -9,7 +9,7 @@
     "license": "CC-BY-SA-4.0",
     "license_rationale": "Upstream SEB v0.5.0 (CC BY-SA 4.0 granted); this localization is a derivative under the same licence. Upstream provenance: submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-spec.json"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "adopted_by_proposal_v1.8",
   "license": {
     "spdx_id": "CC-BY-SA-4.0",
@@ -57,6 +57,48 @@
       },
       "violation_code": "GATE_MISMATCH",
       "note": "L4 binds G3 per upstream l4_gate_rule; downgrade allowed with no extra procedural burden."
+    },
+    {
+      "rule_id": "LOC-04",
+      "name": "pilot-readiness eight-field ledger honesty gate",
+      "ledger_file": "pilot-readiness-ledger.json",
+      "required_fields": [
+        "baseline_and_source",
+        "observation_target_sample_window",
+        "success_and_stop_conditions",
+        "responsible_actor",
+        "human_equivalent_service",
+        "review_cycle",
+        "retention_and_deletion_proof",
+        "objection_appeal_channel"
+      ],
+      "allowed_status": [
+        "known",
+        "proposed",
+        "unknown"
+      ],
+      "obligations": {
+        "known": [
+          "evidence"
+        ],
+        "proposed": [
+          "confirm_by"
+        ],
+        "unknown": [
+          "owner",
+          "recompute_path"
+        ]
+      },
+      "numeric_freeze_on_unknown": true,
+      "violation_codes": [
+        "LEDGER_MISSING_FIELD",
+        "LEDGER_BAD_STATUS",
+        "KNOWN_WITHOUT_EVIDENCE",
+        "PROPOSED_WITHOUT_CONFIRMER",
+        "UNKNOWN_NOT_FROZEN",
+        "UNKNOWN_CARRIES_NUMBER"
+      ],
+      "note": "Freeze the field and name the responsible party when a baseline is missing, but never invent a number. Applies to the eight-field pilot-readiness contract raised by a maintainer in issue #1081."
     }
   ],
   "scenario_slots": [
@@ -168,5 +210,15 @@
       "operating_mode": "L1",
       "responsible_role": "community committee"
     }
-  ]
+  ],
+  "pilot_readiness_contract": {
+    "url": "https://github.com/open-city-ai/haidian/issues/1081#issuecomment-5233902551",
+    "raised_by": "maintainer comment (CocoSgt)",
+    "adoption": "concept_only",
+    "boundaries": [
+      "in-package structural PASS is not field performance or authorisation",
+      "a repository-generated snapshot is not a public deployment",
+      "a missing baseline may freeze the field and its responsibility but must not be filled with invented numbers"
+    ]
+  }
 }

@@ -137,19 +137,19 @@ iteration: "v1.0"
 | 场景卡 | 空间载体 | 设计说明 | 类型 | 物理落点(provisional) |
 | --- | --- | --- | --- | --- |
 | 01 开源发布厅 | 北京 AI 原点社区 | 面向高校、开源社区与初创团队，提供成果发布、代码贡献展示与小型路演空间 | 场景 | P01 原点社区西侧知识公园界面 [data:geometry/key_areas.geojson#PROV-KEY-002] |
-| 02 安全治理沙盒 | 众智园 | 把标准制定、安全评测、模型红队测试转译为可参观、可预约、可监管的展示与协作节点 | 产业测试验证 | P08 众智园中部评测组团 [data:geometry/key_areas.geojson#PROV-KEY-001] |
-| 03 端侧算力驿站 | 总体设计范围节点 | 与公共服务、企业服务和低碳能源结合，作为待深化的新型基础设施原型 | 产业测试验证 | 随公共服务节点分布式布局,待深化 |
+| 02 安全治理沙盒 | 众智园 | 把标准制定、安全评测、模型红队测试转译为可参观、可预约、可监管的展示与协作节点 | 产业测试验证 | P02 众智园中部评测组团 [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| 03 端侧算力驿站 | 总体设计范围节点 | 与公共服务、企业服务和低碳能源结合，作为待深化的新型基础设施原型 | 产业测试验证 | P03 分布式节点代表点（随公共服务节点布局，待深化） |
 | 04 AI 慢行导航 | 京张遗址公园活力带 | 用可解释导视与低侵入传感帮助识别慢行断点、拥挤节点与无障碍需求 | 场景 | P04 公园活力带五道口断面 [data:geometry/green_space.geojson] |
 | 05 大钟寺国际路演客厅 | 大钟寺 AI 产业聚集区 | 服务智能体、智能终端与内容消费企业的展示、洽谈、媒体发布与国际交流 | 场景 | P05 大钟寺站东北商服地块 [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | 06 清河低碳创新廊 | 众智园临清河界面 | 把绿色空间、雨洪、步行骑行与 AI 展示结合，作为园区公共客厅 | 场景 | P06 众智园临清河段 [data:geometry/key_areas.geojson#PROV-KEY-001] |
 | 07 近校成果转化街 | 北京 AI 原点社区 | 面向高校成果转化，组织孵化、展示、法务、知识产权与投融资服务 | 场景 | P07 原点社区近校界面 [data:geometry/key_areas.geojson#PROV-KEY-002] |
-| 08 数据要素会客厅 | 大钟寺片区 | 以合规、授权、可审计为前提，展示数据要素与数字资产流通的城市服务界面 | 产业测试验证 | P11 大钟寺片区内街 [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| 08 数据要素会客厅 | 大钟寺片区 | 以合规、授权、可审计为前提，展示数据要素与数字资产流通的城市服务界面 | 产业测试验证 | P08 大钟寺片区内街 [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | 09 AI 生活服务样板街 | 社区与商业交汇处 | 把医疗、教育、法律、生活服务等 AI+ 场景落到可运营的小尺度街区空间 | 场景 | P09 原点社区商业交汇街 [data:geometry/key_areas.geojson#PROV-KEY-002] |
 | 10 全球 AI 活动周路线 | 一带公共空间系统 | 形成从遗址文化、开源社区、产业展示到国际路演的可步行、可传播体验路线 | 场景 | P10 沿线空间序列,见活动周路线图 |
 | 11 无障碍友好导航 | 轨道站点与公园 | 为老年人与行动不便者提供可解释的路径与设施提示 | 场景 | P11 大钟寺站/公园南端 [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | 12 社区共治议事厅 | 居住社区 | 把城市更新决策、活动安排与设施维护放进可参与的社区空间 | 场景 | P12 原点社区南部居住街坊 [data:geometry/key_areas.geojson#PROV-KEY-002] |
 
-12 张卡的物理落点在 [assets/figures/scenario-locations.png] 与 [assets/figures/key-areas-zoom.png] 中可视化定位（红色虚线为重点区域 provisional 边界，蓝色圆点为场景卡锚点）；落点均随 geometry 图层一致，正式 polygon 到位后随边界重算。
+12 张卡的物理落点自 v1.12 起与卡号一一对应（卡 01→P01 … 卡 12→P12，此前存在 P02/P03 未用、P11 被两张卡重复占用的编号错位，已修正），并在 [assets/figures/scenario-locations.png] 与 [assets/figures/key-areas-zoom.png] 中可视化定位（红色虚线为重点区域 provisional 边界，蓝色圆点为场景卡锚点）；落点均随 geometry 图层一致，正式 polygon 到位后随边界重算。
 
 ![12 张 AI 场景卡的物理落点 — 一带三核](assets/figures/scenario-locations.png)
 
@@ -184,7 +184,44 @@ iteration: "v1.0"
 
 采用边界必须诚实:SEB 本身是概念建议(evidence_class=concept_only,adoption_claim=none),本方案采用其判据骨架,不代表任何场景点位已获评级、已运行或已获政府承诺;所有相关绩效指标在真实运行前保持 status=unknown,并在 metrics.json 与 assumptions.json 中登记复算路径 [source:SEB-2549] [depth:risk_missing_data]。
 
-**随包机器可读实现(可复现)**:为避免「文本采用、无从检验」,本方案随包附三份零依赖离线文件(CC BY-SA 4.0,派生自上游 SEB v0.5.0):visual/assets/seb-localized-spec.json(本地化判据:五字段完整性 LOC-01、等价路径不得依赖同一系统 LOC-02、闸门绑定 LOC-03)、visual/assets/seb-localized-fixtures.json(16 条样例:12 正例 + 4 注入反例,覆盖缺字段/同系统路径/闸门错配/AI 独占四类拒因)、visual/assets/seb-localized-tabletop-run.js(零依赖校验器)。复现命令:`node visual/assets/seb-localized-tabletop-run.js`,退出码 0 表示 12 通过 / 4 拒绝 / 0 不匹配。校验通过只证明判据自洽可执行,不证明任何点位已运行或获批 [source:SEB-2549]。
+**随包机器可读实现(可复现)**:为避免「文本采用、无从检验」,本方案随包附五份零依赖离线文件(CC BY-SA 4.0,派生自上游 SEB v0.5.0):visual/assets/seb-localized-spec.json(本地化判据:五字段完整性 LOC-01、等价路径不得依赖同一系统 LOC-02、闸门绑定 LOC-03、八字段台账诚实门禁 LOC-04)、visual/assets/seb-localized-fixtures.json(16 条样例:12 正例 + 4 注入反例,覆盖缺字段/同系统路径/闸门错配/AI 独占四类拒因)、visual/assets/pilot-readiness-ledger.json(96 格八字段台账)、visual/assets/pilot-readiness-fixtures.json(7 条台账样例:1 正例 + 6 注入反例)、visual/assets/seb-localized-tabletop-run.js(零依赖校验器)。复现命令:`node visual/assets/seb-localized-tabletop-run.js`,退出码 0 表示 24 例全部符合预期(场景卡 12 通过 / 4 拒绝;台账 1 通过 / 6 拒绝)且台账完整性检查通过。校验通过只证明判据自洽可执行,不证明任何点位已运行或获批 [source:SEB-2549]。
+### 试点准备度八字段台账（v1.12 新增）
+
+维护者在仓库公开评论中提出，vNext 的试点合同应逐场景写明八件事：基线与来源、观察对象与时间窗、成功与停止条件、责任主体、人工等价服务、复核周期、保留期限与删除证明、异议与申诉入口 [source:PILOT-READINESS-1081]。本方案把这八字段做成随包台账 visual/assets/pilot-readiness-ledger.json：12 张场景卡 × 8 字段 = 96 格，每格只取三态之一——known（包内可核验，必须给依据）、proposed（方案给出的设计意图，必须给「谁确认」）、unknown（无依据，冻结字段与责任，禁止填数值）。
+
+| 字段 | 本方案状态 | 依据或缺口 | 复算 / 确认路径 |
+| --- | --- | --- | --- |
+| 基线与来源 | unknown ×12 | 十二处均无公开基线，一格数值都没有填 | 由属地街道、园区运营方或现场调查提供后回写，并同步 metrics.json |
+| 观察对象与时间窗 | proposed ×12 | 已给出观察对象、样本方式与时长（如断面计次、跟随式调查、汛期覆盖） | 需运营与属地主体确认观察可行性与侵入度 |
+| 成功与停止条件 | proposed ×12 | 停止条件逐卡写明；成功阈值一律不预设 | 基线建立后由属地与使用者代表共同设定数值 |
+| 责任主体 | proposed ×12 | 判据集为每卡指定了角色，属方案设定而非已确认主体 | 需街道、园区与权属单位书面承接 |
+| 人工等价服务 | known ×12 | 每卡的 ai_off_path 与 human_handoff 已在包内判据集逐条声明 | 包内可核验，无需外部数据 [depth:design_intent] |
+| 复核周期 | proposed ×12 | 建议每季度复核，与闸门 G0–G3 升降级联动 | 需运营主体确认排期与人力 |
+| 保留期限与删除证明 | unknown ×12 | 涉及个人信息处理合规判断，未确定，不预设 | 完成数据合规评估后登记期限、删除触发与证明形式 |
+| 异议与申诉入口 | proposed ×12 | 经双联交接台账回读，接入属地政务服务热线与社区议事渠道 | 需属地确认受理与反馈时限 |
+
+诚实的总量是：96 格中 known 12、proposed 60、unknown 24，包内可核验比例 [metric:pilot_readiness_known_ratio]，冻结无数值格 [metric:pilot_readiness_frozen_unknown_count]。也就是说，这份台账大部分是「知道自己不知道什么」，不是「已经做到」。
+
+**这条底线是机器检查的，不是口头承诺**：SEB 校验器新增 LOC-04 规则，要求每格状态合法、known 必须带依据、proposed 必须带确认人、unknown 必须带责任人与复算路径，并且 **unknown 格一旦出现数字即判违规**。随包 7 条台账夹具中，「往 unknown 格塞一个 12.5 分钟」被校验器 REJECT，全量 24 例符合预期（node visual/assets/seb-localized-tabletop-run.js，exit 0）。
+
+采纳边界同样诚实：本台账只把八字段当作自我约束的清单，不声称任何字段已被满足、任何试点已运行或已获得授权；同时接受维护者划的三条边界——包内结构通过不等于现场性能或授权、仓库生成快照不等于公网部署、缺基线可以冻结字段与责任但不得编造数值 [source:PILOT-READINESS-1081] [depth:risk_missing_data]。
+
+### 最小现场任务：大钟寺站南端无障碍动线（P11）
+
+选它作为唯一的最小现场任务，理由是大道至简：一位乘轮椅或腿脚不便的老人，从大钟寺站出站到公园南端，这段路要走多久、在哪里被迫停下、需要向谁求助——这件事可测、可停、可退，也最能在「AI 关掉之后」被验证 [depth:design_intent]。落点 P11 位于大钟寺重点区域 provisional 范围内 [data:geometry/key_areas.geojson#PROV-KEY-003]。
+
+| 合同要素 | 本方案的规定 | 状态 |
+| --- | --- | --- |
+| 基线从哪里来 | 无官方基线。由现场跟随式调查建立：单次通行时间、求助次数、受阻点位清单 | unknown（不预设任何数值） |
+| 观察对象与时间窗 | 轮椅使用者与老年步行者；连续 4 周、每周不少于 20 人次跟随观察，含一次雨天 | proposed |
+| 成功条件 | 不预设阈值。基线建立后由北太平庄街道、园区运营方与使用者代表共同设定 | unknown |
+| 停止条件 | 任一受阻点位在两周内未消除，或发生一次安全事件，立即停止 AI 导航并全部转人工引导 | proposed |
+| 人工等价服务如何保留 | 站务与社区工作者人工引导、固定线路图与纸质时刻表常驻；AI 失效时服务不降级为「请改用线上」 | known（包内判据集已声明） |
+| 数据何时删除 | 涉及个人位置与身体状态信息，保留期限与删除证明方式未确定 | unknown（冻结，待合规评估） |
+| 异议到哪里回读 | 双联交接台账逐条回读，并接入属地政务服务热线与社区共治议事厅（P12） | proposed |
+| 责任主体 | 判据集指定为站务与社区工作者；承接单位待确认 | proposed |
+
+这个任务的全部价值不在规模，而在**它随时可以被叫停且停得起**：AI 部分撤除后，人工引导与固定标识仍然构成一条完整可用的无障碍路径——这正是 SEB 闸门在本方案里唯一一次落到一个具体的人、一段具体的路上。基线、阈值与数据删除方式三处留白是有意为之，在 assumptions.json 中以 A-PILOT-READINESS-001 与 A-LEDGER-OWNER-001 登记，任何后续版本填入数值前都必须先取得真实来源 [source:PILOT-READINESS-1081] [depth:risk_missing_data]。
 
 ## 用地、建筑规模与拆改留方案
 

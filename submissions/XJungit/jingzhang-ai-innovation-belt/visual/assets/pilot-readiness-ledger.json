@@ -1,0 +1,930 @@
+{
+  "ledger_id": "pilot-readiness-jingzhang-ai-innovation-belt",
+  "ledger_name_zh": "京张AI创新带·试点准备度八字段台账（pilot-readiness）",
+  "ledger_name_en": "Pilot-Readiness Eight-Field Ledger - Jing-Zhang AI Innovation Belt",
+  "version": "0.1.0",
+  "status": "adopted_by_proposal_v1.12",
+  "evidence_class": "concept_only",
+  "derived_from": {
+    "source": "维护者 CocoSgt 在 issue #1081 提出的 vNext pilot-readiness 合同字段清单",
+    "url": "https://github.com/open-city-ai/haidian/issues/1081#issuecomment-5233902551",
+    "fields": [
+      "baseline_and_source",
+      "observation_target_sample_window",
+      "success_and_stop_conditions",
+      "responsible_actor",
+      "human_equivalent_service",
+      "review_cycle",
+      "retention_and_deletion_proof",
+      "objection_appeal_channel"
+    ],
+    "note_zh": "字段清单取自维护者公开评论；本台账不声称任何字段已被满足、任何试点已运行或已获得授权。",
+    "note_en": "Field list taken from a public maintainer comment; this ledger claims no field is satisfied, no pilot is running, and no authorisation exists."
+  },
+  "status_vocabulary": {
+    "known": "有包内可核验依据或公开来源；必须给 evidence",
+    "proposed": "方案给出的设计意图，未经任何一方确认；必须给 confirm_by",
+    "unknown": "无依据，字段与责任冻结；必须给 owner 与 recompute_path，禁止填数值"
+  },
+  "maintainer_boundaries": [
+    "包内结构 PASS 不等于现场性能或授权",
+    "仓库生成快照不等于公网部署",
+    "缺基线时可以冻结字段与责任，但不得编造数值"
+  ],
+  "counts": {
+    "entries": 96,
+    "known": 12,
+    "proposed": 60,
+    "unknown": 24
+  },
+  "entries": [
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）",
+      "recompute_path": "基线来源候选：原点社区运营方活动台账与园区访客计数（公开报道口径见 ORIGIN-COMMUNITY-2026）；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：发布厅周活动场次与到场人次；连续4周、每周2场随机抽样",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：连续2周无人预约使用即停止运营投入，退回普通公共空间；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（Origin Community operator），属方案设定而非已确认主体",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[01-open-source-release-hall].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "01-open-source-release-hall",
+      "card_no": "01",
+      "carrier": "北京AI原点社区·西侧知识公园界面",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "清河街道与中关村智园运营主体（待确认）",
+      "recompute_path": "基线来源候选：评测与红队测试记录目前无公开基线，需由标准与评测机构建立；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：参评模型数量与评测周期；每季度一批",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：评测结论无法向公众回读时停止对外展示，仅保留内部记录；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（technical standards committee），属方案设定而非已确认主体",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[02-safety-governance-sandbox].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "清河街道与中关村智园运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "02-safety-governance-sandbox",
+      "card_no": "02",
+      "carrier": "众智园·中部评测组团",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "海淀区相关主管部门与属地街道（待确认）",
+      "recompute_path": "基线来源候选：算力与能耗基线缺失，需由供电与运营主体提供计量起点；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：节点在线率与故障响应时长；连续8周",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：节点故障率高于人工兜底响应能力时停止扩展，维持既有数量；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（station operator），属方案设定而非已确认主体",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[03-edge-compute-station].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "海淀区相关主管部门与属地街道（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "03-edge-compute-station",
+      "card_no": "03",
+      "carrier": "总体设计范围·公共服务节点分布式",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "海淀区相关主管部门与属地街道（待确认）",
+      "recompute_path": "基线来源候选：慢行断点与拥挤度无官方基线，需现场计次建立；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：断面通行速度与受阻次数；早晚高峰各2小时、连续4周",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：传感设备干扰行人或引发投诉即停止部署，改回标识引导；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（park authority），属方案设定而非已确认主体",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[04-ai-slow-mobility-navigation].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "海淀区相关主管部门与属地街道（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "04-ai-slow-mobility-navigation",
+      "card_no": "04",
+      "carrier": "京张遗址公园活力带·五道口断面",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+      "recompute_path": "基线来源候选：路演与洽谈活动频次由园区运营方台账提供，暂无公开基线；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：月度路演场次与参与企业数；连续3个月",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：连续2个月无企业预约即停止专项运营，空间退回普通商服；闸门绑定按 SEB 阶梯 L2 对应 G2",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（convention organizer），属方案设定而非已确认主体",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[05-international-roadshow-living-room].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "05-international-roadshow-living-room",
+      "card_no": "05",
+      "carrier": "大钟寺·站东北商服地块",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "清河街道与中关村智园运营主体（待确认）",
+      "recompute_path": "基线来源候选：雨洪与步行量基线需水务与园林部门提供，当前未知；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：汛期积水点位与步行量对比；覆盖一个汛期",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：景观与展示设施妨碍行洪或检修时立即拆除，恢复过流断面；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（park authority），属方案设定而非已确认主体",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[06-qinghe-low-carbon-corridor].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "清河街道与中关村智园运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "06-qinghe-low-carbon-corridor",
+      "card_no": "06",
+      "carrier": "众智园·临清河段",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "清河街道与中关村智园运营主体（待确认）"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）",
+      "recompute_path": "基线来源候选：成果转化对接量可由高校技术转移机构提供，暂无公开口径；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：对接项目数与成交周期；连续两个学期",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：无运营主体承接时停止专项改造，恢复普通底商；闸门绑定按 SEB 阶梯 L2 对应 G2",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（conversion service center），属方案设定而非已确认主体",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[07-near-campus-conversion-street].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "07-near-campus-conversion-street",
+      "card_no": "07",
+      "carrier": "原点社区·近校界面",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+      "recompute_path": "基线来源候选：数据流通服务量无公开基线，需数据交易机构口径；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：咨询与授权办理件数；连续3个月",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：出现合规争议或授权链条不清时立即停止展示，仅保留政策咨询；闸门绑定按 SEB 阶梯 L2 对应 G2",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（data governance committee），属方案设定而非已确认主体",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[08-data-element-living-room].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "08-data-element-living-room",
+      "card_no": "08",
+      "carrier": "大钟寺·片区内街",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）",
+      "recompute_path": "基线来源候选：医疗教育法律等服务的现有可及性基线需街道与区部门提供；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：服务到达率与老年居民使用率；连续4周",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：任一服务在AI失效时无人工替代即停止该项上线；闸门绑定按 SEB 阶梯 L2 对应 G2",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（street government），属方案设定而非已确认主体",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[09-ai-life-service-demo-street].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "09-ai-life-service-demo-street",
+      "card_no": "09",
+      "carrier": "原点社区·商业交汇街",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "海淀区相关主管部门与属地街道（待确认）",
+      "recompute_path": "基线来源候选：活动期客流与停留时长需主办方台账，暂无公开基线；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：路线步行完成率与停留点分布；活动周内抽样",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：路线对居民日常出行造成持续干扰即终止该年方案；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（event organizer），属方案设定而非已确认主体",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[10-global-ai-event-week-route].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "海淀区相关主管部门与属地街道（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "10-global-ai-event-week-route",
+      "card_no": "10",
+      "carrier": "一带公共空间系统·活动周路线",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "海淀区相关主管部门与属地街道（待确认）"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+      "recompute_path": "基线来源候选：无障碍通行现状无实测基线，需现场跟随式调查建立（本方案选定为最小现场任务对象）；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：轮椅与老年使用者单次通行时间、求助次数、受阻点位；连续4周、每周不少于20人次跟随观察",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：任一受阻点位在两周内未消除，或出现安全事件，立即停止AI导航并全部转人工引导；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（station operator），属方案设定而非已确认主体",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[11-barrier-free-friendly-navigation].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "北太平庄街道与大钟寺园区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "11-barrier-free-friendly-navigation",
+      "card_no": "11",
+      "carrier": "大钟寺站与公园南端·无障碍动线",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "北太平庄街道与大钟寺园区运营主体（待确认）"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "baseline_and_source",
+      "status": "unknown",
+      "value": "基线未建立，字段与责任冻结，不填任何数值",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）",
+      "recompute_path": "基线来源候选：议事参与率与议题闭环率需街道与居委会台账，当前未知；取得后回写本字段并同步 metrics.json"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "observation_target_sample_window",
+      "status": "proposed",
+      "value": "观察设计：议事场次、居民到会率与决议落实率；连续两个议事周期",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "success_and_stop_conditions",
+      "status": "proposed",
+      "value": "停止条件（设计意图）：议事结果不回流到决策时暂停机制，避免形式化；闸门绑定按 SEB 阶梯 L1 对应 G1",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）；数值阈值一律不预设"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "responsible_actor",
+      "status": "proposed",
+      "value": "判据集为每卡指定了责任角色（community committee），属方案设定而非已确认主体",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "human_equivalent_service",
+      "status": "known",
+      "value": "AI 关闭时的人工等价路径与交接岗位已在包内判据集中逐卡声明",
+      "evidence": "visual/assets/seb-localized-spec.json#scenario_slots[12-community-co-governance-parlor].ai_off_path / .human_handoff"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "review_cycle",
+      "status": "proposed",
+      "value": "建议每季度复核一次，复核结果与闸门升降级联动",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "retention_and_deletion_proof",
+      "status": "unknown",
+      "value": "保留期限与删除证明方式未确定，涉及个人信息处理合规判断，不预设",
+      "owner": "东升镇/学院路街道与原点社区运营主体（待确认）；数据合规与法务主体（待确认）",
+      "recompute_path": "完成数据合规评估后，登记保留期限、删除触发条件与删除证明形式（回执或哈希）"
+    },
+    {
+      "slot_id": "12-community-co-governance-parlor",
+      "card_no": "12",
+      "carrier": "原点社区·南部居住街坊",
+      "field": "objection_appeal_channel",
+      "status": "proposed",
+      "value": "异议经双联交接台账回读，并接入属地政务服务热线与社区议事渠道",
+      "confirm_by": "东升镇/学院路街道与原点社区运营主体（待确认）"
+    }
+  ]
+}

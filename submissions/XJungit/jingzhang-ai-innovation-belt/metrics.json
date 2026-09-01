@@ -191,7 +191,7 @@
     },
     "key_area_zhongzhiyuan_ha": {
       "status": "known",
-      "value": 192.0,
+      "value": 192,
       "unit": "hectare",
       "source_files": [
         "geometry/key_areas.geojson"
@@ -230,6 +230,45 @@
         "Official 72.0 ha; deviation 0.4%. Provisional."
       ],
       "reason": "v1.11 honesty check"
+    },
+    "pilot_readiness_field_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-readiness-ledger.json"
+      ],
+      "formula": "count(derived_from.fields)",
+      "confidence": "high",
+      "assumptions": [
+        "Field list taken from a public maintainer comment; adopting it as a checklist claims no satisfaction."
+      ]
+    },
+    "pilot_readiness_known_ratio": {
+      "status": "known",
+      "value": 0.125,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/pilot-readiness-ledger.json"
+      ],
+      "formula": "counts.known / counts.entries",
+      "confidence": "high",
+      "assumptions": [
+        "Only 12 of 96 cells are in-package verifiable (human-equivalent paths declared per card). The remaining 60 proposed and 24 unknown cells are design intent or frozen fields, not evidence of performance."
+      ]
+    },
+    "pilot_readiness_frozen_unknown_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-readiness-ledger.json"
+      ],
+      "formula": "count(entries where status == 'unknown')",
+      "confidence": "high",
+      "assumptions": [
+        "Each frozen cell names an owner and a recomputation path and carries no number, per the maintainer boundary against invented baselines."
+      ]
     }
   }
 }

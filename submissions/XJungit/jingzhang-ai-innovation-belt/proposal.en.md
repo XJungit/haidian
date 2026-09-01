@@ -133,13 +133,13 @@ Scenarios must land on space and governance boundaries: public-space scenarios c
 | Card | Spatial carrier | Design note | Type | Physical anchor (provisional) |
 | --- | --- | --- | --- | --- |
 | 01 Open-source release hall | Beijing AI Origin Community | For universities, open-source communities and startups: achievement release, code-contribution showcase, small roadshow | Scenario | P01 knowledge-park frontage west of Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] |
-| 02 Safety-governance sandbox | Zhongzhiyuan | Translate standards, safety evaluation, model red-teaming into visitable, bookable, supervised nodes | Industry test/validation | P08 central evaluation cluster, Zhongzhiyuan [data:geometry/key_areas.geojson#PROV-KEY-001] |
-| 03 Edge-compute station | Overall-design-area nodes | With public service, enterprise service and low-carbon energy as a new-infrastructure prototype to deepen | Industry test/validation | Distributed with public-service nodes, to be deepened |
+| 02 Safety-governance sandbox | Zhongzhiyuan | Translate standards, safety evaluation, model red-teaming into visitable, bookable, supervised nodes | Industry test/validation | P02 central evaluation cluster, Zhongzhiyuan [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| 03 Edge-compute station | Overall-design-area nodes | With public service, enterprise service and low-carbon energy as a new-infrastructure prototype to deepen | Industry test/validation | P03 representative point of the distributed set (placed with public-service nodes, to be deepened) |
 | 04 AI slow-mobility navigation | Jing-Zhang Heritage Park belt | Explainable wayfinding and low-intrusion sensing for gaps, crowding, accessibility | Scenario | P04 Wudaokou cross-section of park belt [data:geometry/green_space.geojson] |
 | 05 Dazhongsi international roadshow living room | Dazhongsi cluster | Showcase, negotiation, media release, international exchange for agents, terminals, content | Scenario | P05 NE commercial parcel of Dazhongsi station [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan riverside | Green space, stormwater, walking/cycling and AI showcase as park living room | Scenario | P06 Qinghe riverside segment, Zhongzhiyuan [data:geometry/key_areas.geojson#PROV-KEY-001] |
 | 07 Near-campus conversion street | Beijing AI Origin Community | Achievement conversion: incubation, showcase, legal, IP, investment-finance | Scenario | P07 near-campus frontage, Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] |
-| 08 Data-element living room | Dazhongsi | Compliance-, authorization-, audit-based urban service interface for data elements and digital assets | Industry test/validation | P11 inner street of Dazhongsi [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| 08 Data-element living room | Dazhongsi | Compliance-, authorization-, audit-based urban service interface for data elements and digital assets | Industry test/validation | P08 inner street of Dazhongsi [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | 09 AI life-service model street | Community/commerce junction | AI+ medical, education, legal, life services in a small operable block space | Scenario | P09 commercial junction street, Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] |
 | 10 Global AI Activity Week route | Belt public-space system | Walkable, communicable route from heritage culture to open source to industry to roadshow | Scenario | P10 linear sequence along the belt, see route map |
 | 11 Accessibility-friendly navigation | Stations and park | Explainable paths and facility prompts for the elderly and mobility-limited | Scenario | P11 Dazhongsi station / park south end [data:geometry/key_areas.geojson#PROV-KEY-003] |
@@ -148,6 +148,8 @@ Scenarios must land on space and governance boundaries: public-space scenarios c
 ![Physical placement of 12 AI scenario cards - One Belt Three Cores](assets/figures/scenario-locations.en.png)
 
 ![Key areas spatial deepening - site anchors and AI scenario placement](assets/figures/key-areas-zoom.en.png)
+
+From v1.12 the twelve cards map one-to-one onto anchors P01-P12 (card 01 to P01 ... card 12 to P12); earlier revisions had a numbering defect in which P02 and P03 were unused while P11 was claimed by two different cards, and this has been corrected. Placement is visualised in the two figures above (red dashed lines are provisional key-area boundaries, blue dots are scenario anchors). Every anchor follows the geometry layers and will be recomputed once official polygons are released.
 
 ### Still Usable When AI Is Switched Off: Adoption and Localization of the Service Equivalence Baseline (SEB v0.5.0)
 
@@ -178,7 +180,44 @@ The table below gives immediately fillable equivalent-path examples for the 12 s
 
 The adoption boundary must be honest: SEB itself is a concept suggestion (evidence_class=concept_only, adoption_claim=none); this proposal adopts its criteria skeleton, which does not mean any scenario slot is rated, operational, or government-committed; all related performance metrics stay status=unknown until real operation, with recalculation paths registered in metrics.json and assumptions.json [source:SEB-2549] [depth:risk_missing_data].
 
-**Machine-readable implementation shipped with the package (reproducible):** to avoid "adopted in text but unverifiable," this proposal ships three zero-dependency offline files (CC BY-SA 4.0, derived from upstream SEB v0.5.0): visual/assets/seb-localized-spec.json (localized criteria: five-field completeness LOC-01, equivalent path must not depend on the same system LOC-02, gate binding LOC-03), visual/assets/seb-localized-fixtures.json (16 fixtures: 12 positives + 4 injected negatives covering missing-field / same-system path / gate mismatch / AI-only rejection classes), and visual/assets/seb-localized-tabletop-run.js (zero-dependency validator). Reproduce with: `node visual/assets/seb-localized-tabletop-run.js`, exit 0 = 12 pass / 4 reject / 0 mismatch. Passing proves only that the criteria are self-consistent and executable — not that any slot is operational or approved [source:SEB-2549].
+**Machine-readable implementation shipped with the package (reproducible):** to avoid "adopted in text but unverifiable," this proposal ships five zero-dependency offline files (CC BY-SA 4.0, derived from upstream SEB v0.5.0): visual/assets/seb-localized-spec.json (localized criteria: five-field completeness LOC-01, equivalent path must not depend on the same system LOC-02, gate binding LOC-03, eight-field ledger honesty gate LOC-04), visual/assets/seb-localized-fixtures.json (16 fixtures: 12 positives + 4 injected negatives covering missing-field / same-system path / gate mismatch / AI-only rejection classes), visual/assets/pilot-readiness-ledger.json (96-cell eight-field ledger), visual/assets/pilot-readiness-fixtures.json (7 ledger fixtures: 1 positive + 6 injected negatives), and visual/assets/seb-localized-tabletop-run.js (zero-dependency validator). Reproduce with: `node visual/assets/seb-localized-tabletop-run.js`, exit 0 = all 24 cases as expected (slots 12 pass / 4 reject; ledger 1 pass / 6 reject) plus a passing ledger-completeness check. Passing proves only that the criteria are self-consistent and executable — not that any slot is operational or approved [source:SEB-2549].
+### Pilot-Readiness Eight-Field Ledger (new in v1.12)
+
+A maintainer stated in a public repository comment that a vNext pilot contract should name, per scenario, eight things: baseline and source; observation target, sample and time window; success and stop conditions; responsible actor; human-equivalent service; review cycle; retention and deletion proof; objection and appeal entry [source:PILOT-READINESS-1081]. This proposal turns those eight fields into a shipped ledger, visual/assets/pilot-readiness-ledger.json: 12 scenario cards x 8 fields = 96 cells, each carrying exactly one of three states - known (verifiable inside the package, evidence required), proposed (design intent stated by this proposal, a confirming party required), unknown (no basis: the field and its responsibility are frozen and no number may be filled in).
+
+| Field | State in this proposal | Basis or gap | Recomputation / confirmation path |
+| --- | --- | --- | --- |
+| Baseline and source | unknown x12 | No public baseline exists for any of the twelve; not a single value is filled in | Supplied by the sub-district, the park operator or a field survey, then written back and mirrored in metrics.json |
+| Observation target and window | proposed x12 | Target, sampling method and duration are given per card (cross-section counts, accompanied observation, one flood season) | Operator and local authority must confirm feasibility and intrusiveness |
+| Success and stop conditions | proposed x12 | Stop conditions are written per card; success thresholds are deliberately never preset | After a baseline exists, the local authority and user representatives set the numbers |
+| Responsible actor | proposed x12 | The criteria set assigns a role per card; that is a proposal, not a confirmed duty-holder | Sub-district, operator and asset owner must accept in writing |
+| Human-equivalent service | known x12 | ai_off_path and human_handoff are declared for every card inside the shipped criteria set | Verifiable in-package, no external data needed [depth:design_intent] |
+| Review cycle | proposed x12 | Quarterly review suggested, coupled to gate movement G0-G3 | Operator must confirm schedule and staffing |
+| Retention and deletion proof | unknown x12 | Involves personal-information processing compliance; nothing preset | After a compliance assessment, record the period, deletion trigger and proof form |
+| Objection and appeal entry | proposed x12 | Read back through the dual-copy handover ledger, plus the local government hotline and the community parlor | Local authority must confirm acceptance and response time |
+
+The honest totals are: of 96 cells, known 12, proposed 60, unknown 24; in-package verifiable ratio [metric:pilot_readiness_known_ratio]; frozen number-free cells [metric:pilot_readiness_frozen_unknown_count]. In other words this ledger mostly records knowing-what-is-unknown, not having-achieved-it.
+
+**This floor is machine-checked, not promised**: the SEB validator gained rule LOC-04, requiring a legal status per cell, evidence for known, a confirming party for proposed, an owner plus recomputation path for unknown, and rejecting any unknown cell that contains a digit. Of the 7 shipped ledger fixtures, "smuggling 12.5 minutes into an unknown cell" is REJECTED; all 24 cases behave as expected (node visual/assets/seb-localized-tabletop-run.js, exit 0).
+
+The adoption boundary is equally honest: the ledger treats the eight fields as a self-imposed checklist only and claims no field is satisfied, no pilot running, no authorisation granted. It also accepts the three boundaries the maintainer drew - an in-package structural PASS is not field performance or authorisation; a repository-generated snapshot is not a public deployment; a missing baseline may freeze the field and its responsibility but must never be filled with invented numbers [source:PILOT-READINESS-1081] [depth:risk_missing_data].
+
+### Minimal Field Task: Barrier-Free Route at the South End of Dazhongsi Station (P11)
+
+This single task was chosen for one reason - simplicity over complexity: how long it takes an elderly or wheelchair-using person to get from Dazhongsi station to the south end of the park, where they are forced to stop, and whom they must ask for help, is measurable, stoppable, reversible, and it is exactly what can be verified once AI is switched off [depth:design_intent]. Anchor P11 lies inside the provisional Dazhongsi key area [data:geometry/key_areas.geojson#PROV-KEY-003].
+
+| Contract element | What this proposal stipulates | State |
+| --- | --- | --- |
+| Where the baseline comes from | No official baseline. Built by accompanied field survey: single-trip time, number of requests for help, list of blocked points | unknown (no value preset) |
+| Observation target and window | Wheelchair users and elderly pedestrians; 4 consecutive weeks, at least 20 accompanied observations per week, including one rainy day | proposed |
+| Success condition | No threshold preset. After the baseline exists, Beitaipingzhuang sub-district, the park operator and user representatives set it together | unknown |
+| Stop condition | If any blocked point is not cleared within two weeks, or a single safety incident occurs, stop the AI navigation immediately and switch entirely to human guidance | proposed |
+| How the human-equivalent service is kept | Station staff and community workers give human guidance; fixed route maps and printed timetables stay permanently; when AI fails the service does not degrade into "please use the online channel" | known (declared in the shipped criteria set) |
+| When data is deleted | Involves personal location and mobility status; retention period and deletion proof undetermined | unknown (frozen pending compliance assessment) |
+| Where objections are read back | Cell-by-cell through the dual-copy handover ledger, plus the local government service hotline and the community co-governance parlor (P12) | proposed |
+| Responsible actor | The criteria set names station staff and community workers; the accepting body is to be confirmed | proposed |
+
+The value of this task lies not in scale but in the fact that **it can be stopped at any moment and stopping is affordable**: with the AI layer removed, human guidance plus fixed signage still form a complete, usable barrier-free route - the one place where the SEB gate in this proposal lands on a specific person walking a specific stretch of ground. The three blanks (baseline, threshold, deletion) are intentional and registered in assumptions.json as A-PILOT-READINESS-001 and A-LEDGER-OWNER-001; no later revision may fill them with numbers before a real source is obtained [source:PILOT-READINESS-1081] [depth:risk_missing_data].
 
 ## Land Use, Building Scale and Retain-Renovate-Demolish
 

@@ -248,6 +248,20 @@
       "source_type": "international_case",
       "confidence": "medium",
       "usage": "ITU-T case study of Seoul's Smart Seoul 2015: citizen participation plus digital infrastructure first-mover, early approach largely technology-driven. International contrast to highlight this proposal's people-first governance path."
+    },
+    {
+      "id": "PILOT-READINESS-1081",
+      "url": "https://github.com/open-city-ai/haidian/issues/1081#issuecomment-5233902551",
+      "source_type": "repository_public_registry",
+      "confidence": "high",
+      "usage": "Maintainer comment naming the eight pilot-readiness contract fields (baseline and source; observation target, sample and time window; success and stop conditions; responsible actor; human-equivalent service; review cycle; retention and deletion proof; objection and appeal entry) plus three boundaries: in-package PASS is not field performance, a repository snapshot is not a deployment, and a missing baseline may freeze the field but must not be filled with invented numbers."
+    },
+    {
+      "id": "REVIEW-RUBRIC-DOCS",
+      "path": "docs/review-rubric.md",
+      "source_type": "official_public",
+      "confidence": "high",
+      "usage": "Official seven-dimension formal scorecard weights and the thirteen supplementary agent-taskbook dimensions, including brand identity for naming and logo and spatial explicitness, used to target this revision."
     }
   ]
 }

@@ -810,6 +810,55 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "pilot_readiness_ledger",
+      "title_zh": "试点准备度八字段台账与最小现场任务",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "completeness_limited_by": [
+        "十二处场景均无公开基线，baseline_and_source 全部冻结为 unknown，未填任何数值",
+        "保留期限与删除证明涉及个人信息合规判断，未经评估前保持 unknown",
+        "台账中 60 格 proposed 的责任主体与阈值均为方案设定，尚无任何一方书面确认",
+        "最小现场任务的成功阈值待基线建立后由属地与使用者代表共同设定"
+      ],
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
+        "试点准备度八字段台账（v1.12 新增）",
+        "最小现场任务：大钟寺站南端无障碍动线（P11）",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/site_boundary.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "pilot_readiness_field_count",
+        "pilot_readiness_known_ratio",
+        "pilot_readiness_frozen_unknown_count",
+        "ai_off_service_coverage_ratio"
+      ],
+      "source_ids": [
+        "PILOT-READINESS-1081",
+        "SEB-2549",
+        "REVIEW-RUBRIC-DOCS"
+      ],
+      "assumption_ids": [
+        "A-PILOT-READINESS-001",
+        "A-LEDGER-OWNER-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "随包 pilot-readiness-ledger.json 将 12 张场景卡 × 8 个试点准备度字段展开为 96 格，逐格标注 known/proposed/unknown：known 12（人工等价路径在包内判据集逐卡声明）、proposed 60（设计意图，均写明确认人）、unknown 24（冻结字段与责任，零数值）。SEB 校验器新增 LOC-04 诚实门禁，unknown 格出现数字即 REJECT，全量 24 例符合预期。另将八字段落到一个大钟寺站南端无障碍动线的最小现场任务上，逐条给出基线来源、观察窗、停止条件、人工兜底、数据删除与异议回读。本项 complete 指台账与门禁交付完成，不代表任何字段已被满足或任何试点已运行。"
     }
   ]
 }

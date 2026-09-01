@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "fixtures": [
+    {
+      "fixture_id": "PR-01-honest-unknown-frozen",
+      "expect": "pass",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "unknown",
+        "value": "基线未建立，字段与责任冻结，不填任何数值",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json"
+      }
+    },
+    {
+      "fixture_id": "PR-02-known-without-evidence",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "known",
+        "value": "已建立基线",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json",
+        "evidence": ""
+      }
+    },
+    {
+      "fixture_id": "PR-03-proposed-without-confirmer",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "proposed",
+        "value": "建议每季度复核",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json",
+        "confirm_by": ""
+      }
+    },
+    {
+      "fixture_id": "PR-04-unknown-without-owner",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "unknown",
+        "value": "基线未建立，字段与责任冻结，不填任何数值",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json"
+      }
+    },
+    {
+      "fixture_id": "PR-05-unknown-smuggling-a-number",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "unknown",
+        "value": "基线约为 12.5 分钟",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json"
+      }
+    },
+    {
+      "fixture_id": "PR-06-bad-status-word",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "baseline_and_source",
+        "status": "assumed",
+        "value": "基线未建立，字段与责任冻结，不填任何数值",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json"
+      }
+    },
+    {
+      "fixture_id": "PR-07-field-not-in-contract",
+      "expect": "reject",
+      "entry": {
+        "slot_id": "11-barrier-free-friendly-navigation",
+        "card_no": "11",
+        "carrier": "大钟寺站与公园南端·无障碍动线",
+        "field": "weather_forecast",
+        "status": "unknown",
+        "value": "基线未建立，字段与责任冻结，不填任何数值",
+        "owner": "北太平庄街道与大钟寺园区运营主体（待确认）",
+        "recompute_path": "完成现场跟随式调查后回写本字段并同步 metrics.json"
+      }
+    }
+  ]
+}
