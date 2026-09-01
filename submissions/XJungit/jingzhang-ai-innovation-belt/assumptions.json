@@ -24,6 +24,12 @@
       "status": "pending_professional_confirmation",
       "statement": "Responsible parties named in the ledger (sub-district offices, park operators, data-compliance and legal bodies) are placeholders derived from public reporting and from the proposal's own role assignment; none has confirmed acceptance of the duty.",
       "impact": "Any operational claim depends on written confirmation from the named parties; until then the ledger supports review, not implementation."
+    },
+    {
+      "id": "A-SECTION-PLACEHOLDER-001",
+      "status": "open",
+      "statement": "街道剖面规范研究图(street-section-norms.png)中的建筑高度 H=24 m 取自包内 geometry 占位值(104 面全部 24 m / 6 层、无高差),道路图层不含任何宽度字段且 confidence=low;因此该图是按采纳的 D/H 标准反推的规范剖面,不是现状实测断面。正式控规限高与实测断面到位后必须重绘,在此之前不得称其为实测。",
+      "impact": "限制剖面图与人视点判断的证据强度:可用于设计标准推演与方案自洽检验,不可用于声称现状空间尺度已被测量证实。"
     }
   ]
 }

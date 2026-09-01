@@ -149,6 +149,25 @@ Scenarios must land on space and governance boundaries: public-space scenarios c
 
 ![Key areas spatial deepening - site anchors and AI scenario placement](assets/figures/key-areas-zoom.en.png)
 
+### Section and Eye-Level: A Normative Judgement of Street Width-to-Height (new in v1.12)
+
+Discipline 1 of the methodology demands a plan-section-eye-level triple. The two figures above supply plan and anchors; this section supplies the section - but only after stating how far that section can legitimately go.
+
+**What the data actually allows**: in geometry/buildings.geojson all 104 building footprints carry height_m = **24 m exactly** (6 storeys, no variation), and the 12 features in geometry/roads.geojson carry **only a road_class - no width field at all** - with source_type agent_generated_design and confidence low. This proposal therefore **ships no measured section**: computing D/H from a placeholder height would dress a placeholder up as a survey result. The figure below is instead a **normative section** - height fixed at H = 24 m, scale identical in every panel, only the street width D varying, with the width each section should have derived from the adopted standard [source:BOOK-THEORY].
+
+![Normative street-section study - street width derived from the adopted D/H standard (not measured)](assets/figures/street-section-norms.en.png)
+
+Reading the four panels against the three key areas:
+
+| Section | D/H | Street width | Normative judgement | Where this proposal applies it |
+| --- | --- | --- | --- | --- |
+| 1 | 1:2 | 12 m | oppressive enclosure; the pedestrian is sacrificed before the vehicle | rear lanes and green-axis walking stretches only, never a main-road cross-section |
+| 2 | 1:1 | 24 m | faces on the opposite side remain readable, sitting inside Gehl's 20-25 m social distance | target band for the Wudaokou cross-section (P04) and the Dazhongsi inner street (P08) |
+| 3 | 1.5:1 | 36 m | open, yet still legible as a street | perimeter of the deliberation square, Yuandian community south block (P12) |
+| 4 | 2:1 | 48 m | at the comfort ceiling; beyond this the street turns into void | Qinghe hub segment: if the 24 m height limit holds, arcades, continuous tree cover and street furniture must rebuild the edge, or the section fails |
+
+The point of this figure is not accuracy but **turning "how people move once AI is switched off" into a spatial claim that can be refuted**: where official regulatory heights or surveyed cross-sections contradict the table, the official data wins, this figure is redrawn, and it lapses. The limitation is registered as assumption A-SECTION-PLACEHOLDER-001, and no later revision may relabel this normative section as measured [depth:design_intent].
+
 From v1.12 the twelve cards map one-to-one onto anchors P01-P12 (card 01 to P01 ... card 12 to P12); earlier revisions had a numbering defect in which P02 and P03 were unused while P11 was claimed by two different cards, and this has been corrected. Placement is visualised in the two figures above (red dashed lines are provisional key-area boundaries, blue dots are scenario anchors). Every anchor follows the geometry layers and will be recomputed once official polygons are released.
 
 ### Still Usable When AI Is Switched Off: Adoption and Localization of the Service Equivalence Baseline (SEB v0.5.0)

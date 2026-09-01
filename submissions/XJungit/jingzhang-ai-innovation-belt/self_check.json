@@ -33,6 +33,8 @@
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/scenario-locations.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/site-overview.en.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/site-overview.png",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/street-section-norms.en.png",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/street-section-norms.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assumptions.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/compliance_matrix.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/design_depth_matrix.json",
@@ -71,7 +73,7 @@
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 4129354,
+      "total_bytes": 6035059,
       "maintainer_bypass": false
     },
     "stderr": ""

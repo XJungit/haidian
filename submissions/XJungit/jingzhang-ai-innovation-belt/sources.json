@@ -83,7 +83,7 @@
       "url": "https://www.marxists.org/chinese/index.html",
       "source_type": "agent_inferred_from_public_data",
       "confidence": "low",
-      "usage": "Background conceptual grounding only: Marx (Theses on Feuerbach - philosophers have only interpreted the world; alienated labour), Mumford (The City in History - city as container/magnet for human association), Jacobs (The Death and Life of Great American Cities - streets for people), Lefebvre (The Production of Space). Philosophical spine for 'AI-and-people / human-centered'; not a spatial, metric or regulatory authority."
+      "usage": "Background conceptual grounding only: Marx (Theses on Feuerbach - philosophers have only interpreted the world; alienated labour; Grundrisse 'General Intellect'), Mumford (The City in History - city as container/magnet for human association), Jacobs (The Death and Life of Great American Cities - streets for people), Lefebvre (The Production of Space), Ashihara Yoshinori (The Aesthetics of the Street - D/H ratio 1:1 to 1:2 as the comfortable street enclosure range), Gehl (Life Between Buildings - 20-25 m as the distance at which faces can be read). Philosophical and spatial-standard spine for 'AI-and-people / human-centered'; not a regulatory authority and not a source of measured site values."
     },
     {
       "id": "ZHIHU-THUMIT",
