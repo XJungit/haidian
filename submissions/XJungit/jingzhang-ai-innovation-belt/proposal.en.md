@@ -36,7 +36,7 @@ Further, this proposal treats "the future life of AI and people together in one 
 
 
 
-![Site overview and evidence chain](assets/figures/site-overview.png)
+![Site overview of the Jing-Zhang AI Innovation Belt: three true-scale segments (north, middle, south) with legend, scale bar and north arrow](assets/figures/site-overview.png)
 
 ## Three-Level Scope Framework
 
@@ -90,7 +90,7 @@ The overall design must also support transport, rail, municipal and public servi
 
 Key-area detailed design is mandatory. This proposal gives each of Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community and Dazhongsi AI Industry Cluster a readable mini-plan of positioning + spatial move + building renewal + transport/slow-mobility + public space + AI scenario + implementation risk, reaching planning-implementation-scheme depth [depth:three_key_area_detailed_design]. The three key-area geometries are at [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003]; because they are provisional, the following moves are directional and will be recomputed with official polygons [depth:risk_missing_data].
 
-![Key areas index and design tasks](assets/figures/key-areas.png)
+![Location and extent of the three key areas: one shared scale, areas taken from the declared values in metrics.json](assets/figures/key-areas.png)
 
 ### Zhongzhiyuan AI Acceleration Area (North Core)
 
@@ -327,7 +327,7 @@ The metric system at least covers overall-design-area area, key-area area, green
 
 Metric recalculation follows the unified design-depth requirement [depth:metrics_recalculation]. The text explains metric meaning: how the overall area constrains spatial allocation, how blue-green and public-space ratios support daily interaction; full values, formulas, source files and confidence are in metrics.json [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio].
 
-![Metric recalculation and evidence chain](assets/figures/metrics-evidence.png)
+![Core metrics and evidence status: values read from metrics.json; the three unknowns are shown as having no basis, with no numbers filled in](assets/figures/metrics-evidence.png)
 
 The compliance matrix is the master file for task responsiveness. Each announcement task and agent_taskbook task maps to report chapter, layer, metric, drawing, HTML page, source, assumption and self-check item. Any mandatory task in 1.3, 1.4, 1.5 or agent.1-agent.6 not covered bars the proposal from formal professional scoring [source:OFFICIAL-ANNOUNCEMENT].
 

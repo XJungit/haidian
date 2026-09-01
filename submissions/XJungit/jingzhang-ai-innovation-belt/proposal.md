@@ -40,7 +40,7 @@ iteration: "v1.0"
 
 
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![京张立人——百年京张AI创新带城市设计总览：北中南三段等比拼接，含图例、比例尺与指北针](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
 
@@ -94,7 +94,7 @@ iteration: "v1.0"
 
 重点区域详细设计是必选项，本方案对众智园 AI 自主创新加速区、北京 AI 原点社区、大钟寺 AI 产业聚集区分别给出「定位 + 空间动作 + 建筑更新 + 交通慢行 + 公共空间 + AI 场景 + 实施风险」的可读小方案，达到规划综合实施方案深度 [depth:three_key_area_detailed_design]。三处重点区的几何边界见 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]；因当前为 provisional 边界，下列空间动作均为方向性设计，待官方 polygon 发布后随边界重算 [depth:risk_missing_data]。
 
-![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
+![三处重点区域定位与范围：同一比例尺可直接比较，面积取 metrics.json 声明值](assets/figures/key-areas.png)
 
 ### 众智园 AI 自主创新加速区（北核）
 
@@ -333,7 +333,7 @@ iteration: "v1.0"
 
 指标复算遵循统一的设计深度要求 [depth:metrics_recalculation]。正文重点解释指标的设计含义：总体范围如何约束空间分配、蓝绿和公共空间比例如何支撑日常交往；完整数值、公式、来源文件与置信度保存在 metrics.json [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。
 
-![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
+![核心指标与证据状态：数值取自 metrics.json，三项 unknown 明示无依据、不填数](assets/figures/metrics-evidence.png)
 
 合规矩阵是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设与自检项。未能覆盖公告 1.3、1.4、1.5 或 agent.1 至 agent.6 的任一必选任务，方案不得进入 formal professional scoring [source:OFFICIAL-ANNOUNCEMENT]。
 
