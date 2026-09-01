@@ -1,0 +1,306 @@
+{
+  "type": "FeatureCollection",
+  "name": "scenario_anchors",
+  "layer_purpose_zh": "12 张 AI 场景卡的物理落点图层，与 assets/figures/scenario-locations.png、key-areas-zoom.png 的 P01—P12 标注同源。",
+  "layer_purpose_en": "Placement layer for the 12 AI scenario cards, the same source used by the P01-P12 labels in assets/figures/scenario-locations.png and key-areas-zoom.png.",
+  "coordinate_reference_system": "EPSG:4326 (geographic WGS84 / CGCS2000 lat-lon, consistent with the other geometry layers)",
+  "feature_count": 12,
+  "confidence": "low",
+  "source_type": "agent_generated_design",
+  "status": "provisional",
+  "related_assumptions": [
+    "A-PROVISIONAL-GEOMETRY-001",
+    "A-OPC-ALIGNMENT-001",
+    "A-CONTROLS-001"
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "id": "P01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3424,
+          39.9839
+        ]
+      },
+      "properties": {
+        "anchor_id": "P01",
+        "card_no": "01",
+        "name_zh": "开源发布厅",
+        "name_en": "Open-source release hall",
+        "carrier_zh": "原点社区西侧知识公园界面",
+        "key_area_ref": "PROV-KEY-002",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3486,
+          40.0167
+        ]
+      },
+      "properties": {
+        "anchor_id": "P02",
+        "card_no": "02",
+        "name_zh": "安全治理沙盒",
+        "name_en": "Safety governance sandbox",
+        "carrier_zh": "众智园中部评测组团",
+        "key_area_ref": "PROV-KEY-001",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P03",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3477,
+          39.981
+        ]
+      },
+      "properties": {
+        "anchor_id": "P03",
+        "card_no": "03",
+        "name_zh": "端侧算力驿站",
+        "name_en": "Edge-compute station",
+        "carrier_zh": "总体设计范围内公共服务节点代表点，具体站址待深化",
+        "key_area_ref": null,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P04",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3437,
+          39.9926
+        ]
+      },
+      "properties": {
+        "anchor_id": "P04",
+        "card_no": "04",
+        "name_zh": "AI 慢行导航",
+        "name_en": "AI slow-mobility wayfinding",
+        "carrier_zh": "京张遗址公园活力带五道口断面",
+        "key_area_ref": null,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P05",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3548,
+          39.9496
+        ]
+      },
+      "properties": {
+        "anchor_id": "P05",
+        "card_no": "05",
+        "name_zh": "大钟寺国际路演客厅",
+        "name_en": "Dazhongsi pitch lounge",
+        "carrier_zh": "大钟寺站东北商服地块",
+        "key_area_ref": "PROV-KEY-003",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P06",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3434,
+          40.0259
+        ]
+      },
+      "properties": {
+        "anchor_id": "P06",
+        "card_no": "06",
+        "name_zh": "清河低碳创新廊",
+        "name_en": "Qinghe low-carbon corridor",
+        "carrier_zh": "众智园临清河段",
+        "key_area_ref": "PROV-KEY-001",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P07",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3456,
+          39.9931
+        ]
+      },
+      "properties": {
+        "anchor_id": "P07",
+        "card_no": "07",
+        "name_zh": "近校成果转化街",
+        "name_en": "Campus tech-transfer street",
+        "carrier_zh": "原点社区近校界面",
+        "key_area_ref": "PROV-KEY-002",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P08",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3484,
+          39.9468
+        ]
+      },
+      "properties": {
+        "anchor_id": "P08",
+        "card_no": "08",
+        "name_zh": "数据要素会客厅",
+        "name_en": "Data-factor reception street",
+        "carrier_zh": "大钟寺片区内街",
+        "key_area_ref": "PROV-KEY-003",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P09",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3476,
+          39.9883
+        ]
+      },
+      "properties": {
+        "anchor_id": "P09",
+        "card_no": "09",
+        "name_zh": "AI 生活服务样板街",
+        "name_en": "AI living-service street",
+        "carrier_zh": "原点社区商业交汇街",
+        "key_area_ref": "PROV-KEY-002",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3457,
+          39.965
+        ]
+      },
+      "properties": {
+        "anchor_id": "P10",
+        "card_no": "10",
+        "name_zh": "全球 AI 活动周路线",
+        "name_en": "Global AI week route",
+        "carrier_zh": "沿线空间序列代表点",
+        "key_area_ref": null,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3424,
+          39.9444
+        ]
+      },
+      "properties": {
+        "anchor_id": "P11",
+        "card_no": "11",
+        "name_zh": "无障碍友好导航",
+        "name_en": "Barrier-free navigation",
+        "carrier_zh": "大钟寺站/公园南端",
+        "key_area_ref": "PROV-KEY-003",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P12",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3444,
+          39.9839
+        ]
+      },
+      "properties": {
+        "anchor_id": "P12",
+        "card_no": "12",
+        "name_zh": "社区共治议事厅",
+        "name_en": "Community co-governance hall",
+        "carrier_zh": "原点社区南部居住街坊",
+        "key_area_ref": "PROV-KEY-002",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "status": "provisional",
+        "note_zh": "落点为方案设定的代表点，用于检验场景与空间的可对应性；不是选址批准，不含用地权属，须经现场踏勘与属地确认后方可作为实施依据。",
+        "note_en": "Representative placement set by the design to test that each scenario has a spatial counterpart; not an approved site selection, carries no land rights, and requires field survey and local confirmation before use for implementation."
+      }
+    }
+  ]
+}

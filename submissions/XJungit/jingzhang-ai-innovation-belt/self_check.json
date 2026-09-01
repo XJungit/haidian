@@ -64,6 +64,7 @@
         "submissions/XJungit/jingzhang-ai-innovation-belt/standard_matrix.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/pilot-readiness-fixtures.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/pilot-readiness-ledger.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/scenario-anchors.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-fixtures.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-spec.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-tabletop-run.js",
@@ -73,7 +74,7 @@
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 10719579,
+      "total_bytes": 10774391,
       "maintainer_bypass": false
     },
     "stderr": ""

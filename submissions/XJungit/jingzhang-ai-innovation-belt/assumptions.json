@@ -30,6 +30,18 @@
       "status": "open",
       "statement": "街道剖面规范研究图(street-section-norms.png)中的建筑高度 H=24 m 取自包内 geometry 占位值(104 面全部 24 m / 6 层、无高差),道路图层不含任何宽度字段且 confidence=low;因此该图是按采纳的 D/H 标准反推的规范剖面,不是现状实测断面。正式控规限高与实测断面到位后必须重绘,在此之前不得称其为实测。",
       "impact": "限制剖面图与人视点判断的证据强度:可用于设计标准推演与方案自洽检验,不可用于声称现状空间尺度已被测量证实。"
+    },
+    {
+      "id": "A-PROVISIONAL-GEOMETRY-001",
+      "status": "open",
+      "statement": "总体范围 SITE-001 与三处重点区域 PROV-KEY-001/002/003 均为仓库登记的 provisional 边界,却是 site_area_sqm(1141.28 公顷)与 key_area_zhongzhiyuan_ha / key_area_origin_community_ha / key_area_dazhongsi_ha(192.0 / 103.8 / 71.7 公顷)等 known 指标的唯一数值基础。此处 known 的含义是「由包内几何可复算」,不是「与官方红线一致」。",
+      "impact": "官方 polygon 到位后,site_area_sqm、三项 key_area 面积、land_use 分类面积、green_ratio、public_space_ratio 与全部图件必须全量重算;在此之前不得把这些面积读作实测值或审批依据,也不得据此计算容积率等衍生控制指标。"
+    },
+    {
+      "id": "A-OPC-ALIGNMENT-001",
+      "status": "open",
+      "statement": "PROV-KEY-002(北京 AI 原点社区,103.8 公顷)是按公告约值 104.3 公顷绘制的 provisional 矩形,与真实运营中的原点社区实际 footprint 尚未锚定对齐,存在位置与形状偏差;当前仅能声明面积量级一致(偏差 0.5%),不能声明空间范围一致。",
+      "impact": "涉及原点社区的场景卡(P02/P04/P07/P09/P12)与用户画像落位,在官方或运营方边界到位前只作为设计假设使用;不得把原点社区的运营事实(企业数、人才数、楼宇名)与本包 provisional 矩形合并叙述为已核实的空间结论。"
     }
   ]
 }

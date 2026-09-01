@@ -223,6 +223,11 @@
       "professional_dimension": "控规",
       "required": true,
       "status": "complete",
+      "completeness_limited_by": [
+        "容积率、建筑密度、绿地率与控规指标在本包内全部记为 unknown，未填任何数值",
+        "官方控规批复文本与街区图则未纳入包内，A-CONTROLS-001 已登记该缺口",
+        "本项交付的是缺资料清单与复算路径，不是核定条件；complete 指方法交付完成，不指条件满足"
+      ],
       "proposal_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
@@ -277,6 +282,11 @@
       "professional_dimension": "建筑",
       "required": true,
       "status": "complete",
+      "completeness_limited_by": [
+        "geometry/buildings.geojson 的 104 面建筑 height_m 全部为 24 米占位值，无高差、无限高依据",
+        "缺少官方限高分区与风貌分区数据，高度与体量结论不可作为审批依据",
+        "本项交付的是复算路径与待确认清单；complete 指方法交付完成，不指条件满足"
+      ],
       "proposal_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
@@ -331,6 +341,11 @@
       "professional_dimension": "建筑",
       "required": true,
       "status": "complete",
+      "completeness_limited_by": [
+        "缺少权属、建成年代、结构安全与保护名录数据，本包不给出任何拆改留分类结论",
+        "分类方法、判据字段与复算路径已交付，实际分类须由属地与专业机构确认后重算",
+        "complete 指方法与清单交付完成，不指分类已完成"
+      ],
       "proposal_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
