@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "581d382742daf17a738b95474fb6334b5061ad75ec925cbd922b967c7a63bacb"
+      "sha256": "f3fedceb0b624e350589cae2ee84de1d711ada2af2464d6322a2765218c01d10"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f2fd5a4a9f319bdc4ec4f00d4f9f8c47c007ced1717d4d2e199d132636f7e127"
+      "sha256": "b9576af8c313a9dc0e5ef9ce8065540216561af4f8adf4ec50a09717a334bc26"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "916eadccb6cbca25b66ba9cf70476e083dd5de88f7d39336d87b51ba16c47e4a"
+      "sha256": "b17e803128bac31c33b81182a70b5236fcda6d1f6e1d4a2c211350a1a96673d3"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4efd932a52b1302555373b1ff1327f796243dc09ad89dc9faa62fcb1e5d52ea3"
+      "sha256": "fc07f8520bf48c91de838fbf06c993c129909b7b35dc31a54dee4775c777cac6"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "09f7861ccab19698bc7eac437f3815a1c405d7e2b6cd5712986e06363e7a7945"
+      "sha256": "f46df1a7aafa16b3a5527ce5807a6f5bb78d59aca849755ffb105a756b39f15f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -332,6 +332,24 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "074d1c1ab072345b19cb9e0c65e534eb6f360fb9985ac2f5ed7fe52c8fb29785"
+    },
+    {
+      "path": "visual/assets/osm-rail-alignment.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "30ebd3a48e0aa472de6c3707db382637e28ed462d3f4196b60d5d49ae50994d4"
+    },
+    {
+      "path": "visual/assets/osm-heritage-park.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "86d5edf2466295900ae4508438ac6b246420a5931cffbe8629db280d9d241881"
+    },
+    {
+      "path": "visual/assets/corrected-corridor-reference.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "88337b0fd81a01febdbde765c13b5f37be6bbcd62f333f712406f44c238bdcee"
     },
     {
       "path": "visual/assets/pilot-readiness-ledger.json",

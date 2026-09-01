@@ -122,6 +122,18 @@ Collaborative circuit: the three zones supply the innovation content, the two wi
 
 **Not yet spatialised (honest note)**: Function 5, "global voice in AI governance", has no dedicated spatial layer in this package and is carried only by the operating clauses of P01 and P08. This is a weak placement; a dedicated space and metric are needed at detailed-design stage, and this package does not pretend it has been spatialised (the gap is registered as A-CONTROLS-001 in assumptions.json).
 
+### Boundary truth check: our area sits 411.8 m from the mapped heritage park (new in v1.13d)
+
+This proposal's site_boundary uses the shared provisional boundary PROV-SITE-001 supplied by the organizers. On 2026-09-01, public issue #846 claimed that boundary does not intersect the OSM-mapped Jing-Zhang railway heritage park (nearest 412.5 m). This package reproduced the check independently with its own geometry: **minimum distance 411.8 m, overlap 0.00 ha**, and our boundary is vertex-identical with the organizers' PROV-SITE-001 (0.0 m). Tracing the OSM rail alignment (the Jing-Zhang railway, rail=rail segments): the southern section (Dazhongsi station, lat 39.94-39.97) is inside, but **north of lat 39.976 the alignment shifts west to lon 116.330-116.334, i.e. 490-850 m beyond our western edge**. The announcement defines the overall design area as the city and industry territory 1-2 km around the heritage park; the actual boundary thus cuts the northern corridor of the park outside the declared area.
+
+This package's handling, consistent with its honesty discipline and without unilateral changes:
+
+1. **No replacement** of the organizers' boundary: PROV-SITE-001 is the declared scope and the numeric basis of every area metric; replacing it would only create a second inconsistent basis, and we have no official polygon to present as an authoritative correction.
+2. **Machine-readable references shipped**: three OSM artifacts are in the package - visual/assets/osm-rail-alignment.json (railway alignment, 61 ways), visual/assets/osm-heritage-park.json (mapped park segments) and visual/assets/corrected-corridor-reference.json (a 1,000 m buffer around the alignment clipped to the announcement's north/south bounds, 1,380.78 ha, verified to contain the park fully). They are reference and verification material, **not** the design boundary; as geometry/ is restricted to nine fixed layer names they live under visual/assets/.
+3. **Assumption registered**: A-PROVISIONAL-GEOMETRY-001 in assumptions.json states that 'known' metrics mean recomputable from the in-package geometry only, not consistent with any official redline.
+4. **Recommended action**: push the organizers to update PROV-SITE-001 (as #846 also argues; the earlier the update, the fewer packages need recomputation). Once an official polygon is available, every area metric and figure here must be fully recomputed.
+
+The verification script and data (D:/WorkSpace/city/regen/verify_boundary_vs_osm.py, osm_rail_raw.json, osm_park_raw.json) are public alongside this package; the source_ways fields in each JSON record their OSM origins.
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Depth Urban Design
 
 

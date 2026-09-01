@@ -128,6 +128,18 @@ iteration: "v1.0"
 
 **未落位项（诚实标注）**：功能五「AI 治理全球话语权」在本包内没有独立空间图层，仅以 P01 开源发布厅与 P08 数据要素会客厅的运营条款承载，属弱落位；正式深化阶段须补专项空间与指标，本包不假装它已被空间化（缺口登记于 assumptions.json 的 A-CONTROLS-001）。
 
+### 边界真实性核验：我们的范围与真实遗址公园偏移 411.8 米（v1.13d 新增）
+
+本方案的 site_boundary 沿用征集方提供的共享 provisional 边界 PROV-SITE-001。2026-09-01，公开 issue #846 提出该边界与 OSM 测绘的京张铁路遗址公园不相交（最近 412.5 米）；本包用自己的几何独立复现：**边界与 OSM 实测公园最小距离 411.8 米，重叠 0.00 公顷**，且我们的边界与征集方 PROV-SITE-001 逐顶点完全一致（0.0 米）。进一步按 OSM 铁路走线（京张铁路 rail=rail 各段）追踪：南段（大钟寺站一带，纬度 39.94—39.97）确实在界内，但**北段（纬度 39.976 以上）铁路西移至经度 116.330—116.334，超出我们西缘 490—850 米**。也就是说，公告明文「总体设计范围=以京张遗址公园周边 1—2 公里的城市地区」，而实际边界把公园走廊的北段切在了界外。
+
+本包的处理（与诚实红线一致，不做擅自更改）：
+
+1. **不替换**征集方边界：PROV-SITE-001 是声明范围与全部面积指标的数值基础，擅自改只会造成新的口径分裂；我们没有官方 polygon，不能自封“校正边界”。
+2. **交付可机读参考**：三份 OSM 参考工件已入包——visual/assets/osm-rail-alignment.json（京张铁路走线，61 段）、visual/assets/osm-heritage-park.json（OSM 实测公园段）、visual/assets/corrected-corridor-reference.json（以走线为中心 1000 米缓冲、按公告南北界裁剪的候选走廊，1380.78 公顷，已验证把公园完整包住）。这些是参考与核验材料，**不是**设计边界；且 geometry/ 目录只允许九个固定图层名，故放于 visual/assets/ 下。
+3. **登记假设**：assumptions.json 的 A-PROVISIONAL-GEOMETRY-001 已写明“known 指标只表示可由包内几何复算，不代表与官方红线一致”。
+4. **行动建议**：推动组织方更新 PROV-SITE-001（#846 亦持此见，越早更新、需重算的方案越少）；官方 polygon 到位后，本包全部面积指标与图件必须全量重算。
+
+复现脚本与数据：D:/WorkSpace/city/regen/verify_boundary_vs_osm.py 与 D:/WorkSpace/city/regen/osm_rail_raw.json、osm_park_raw.json 随本包公开（OSM 数据 ODbL 许可，来源可见各 json 的 source_ways 字段）。
 ## 总体设计范围城市更新与控规深度城市设计
 
 
