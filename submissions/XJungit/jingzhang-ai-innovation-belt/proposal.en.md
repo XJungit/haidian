@@ -34,6 +34,28 @@ These are not decorative citations. They are also echoed by real contemporary re
 
 Further, this proposal treats "the future life of AI and people together in one city" as an explicit design proposition, not background decoration. Planning must answer not "what can AI do" but "how people coexist with AI in the same city and live better": an elderly person living alone is protected without being surveilled; a founder steps downstairs into collaboration and orders rather than commuting for hours; residents meet AI facilities naturally in the heritage park without issuing commands to a screen; wheelchair and stroller users enjoy equally continuous ground. Jiang Hongfeng, from a Marxist political-economy view, warns of "digital-labour alienation" and a "seeing objects not people" imbalance, proposing a "labour-life-city" synergy aimed at "the free all-round development of people" [source:ZHIHU-JIANG]. This proposal turns that warning into a hard constraint: any AI scenario that demotes people to data flows, or any narrative that talks only of compute and output without concrete people and concrete life gaps, is treated as unfinished [depth:ai_and_people_spine] [source:ZHIHU-JIANG].
 
+### General Intellect: Writing AI as a Public Means of Production, Not a New Ground Rent (new in v1.13)
+
+In the Fragment on Machines of the Grundrisse, Marx raises the "General Intellect": once knowledge, science and social cooperation become direct productive forces, the measure of wealth stops being primarily direct labour time and becomes the objectification of social knowledge [source:BOOK-THEORY]. This carries operational meaning here, not philosophical colour, because compute, data and models are the present material form of the general intellect.
+
+Hence the spatial question this proposal actually answers: **the same means of production, distributed in different ways, draws an entirely different city.**
+
+- Distributed as **rent**, compute and data grow the city into "compute highlands and data enclaves": the indicators look good while the breaks stay inside people's daily routes - the park wall gets smarter while the pavement outside it stays impassable, the model iterates faster while an older resident still cannot open the booking page.
+- Distributed as **public infrastructure**, space becomes a network of nodes that are reachable, queryable and exitable: like water, electricity or a library, unnoticed when it works, with someone accountable when it does not.
+
+The second reading is written as three verifiable spatial clauses rather than as a slogan:
+
+| Clause | Spatial carrier | Scenario card | Verifiable test |
+| --- | --- | --- | --- |
+| The general intellect must have a public interface | Knowledge-park frontage west of the Origin Community | P01 open-source release hall | Results and code contributions viewable on site by the non-contracted public, with no exhibition threshold reserved for selected firms |
+| Compute must be reachable and exitable | Public service nodes across the overall design area | P03 edge-compute station | The station must sustain an equivalent human or physical service with AI switched off, per the AI-off baseline |
+| Data must circulate auditably | Interior street of the Dazhongsi district | P08 data-factor reception street | Compliance, authorisation and auditability as preconditions: no collection without authorisation, no circulation without a trace |
+
+These three clauses also explain why the **AI-off baseline** - whether a service still works once AI is switched off - is a core metric here and not an optional one: once the general intellect becomes the principal means of production, publicity cannot be asserted, it can only be tested by **switching it off and seeing what remains**. Accordingly ai_off_service_coverage_ratio and ai_off_failed_sample_reporting_ratio are marked unknown in metrics.json and refused any number - which is itself an expression of a distributional position: where no public baseline exists, the field and its responsibility are frozen rather than an estimate passed off as a measurement [metric:ai_off_service_coverage_ratio] [metric:ai_off_failed_sample_reporting_ratio].
+
+Honesty boundary: this section states a value position and a theoretical spine. It is not a regulatory authority and supplies no measured site values; the wording of the "General Intellect" follows the relevant volume of the Chinese second edition of the Marx-Engels complete works, with the exact volume and page still to be verified [source:BOOK-THEORY] [depth:ai_and_people_spine].
+
+
 
 
 ![Site overview of the Jing-Zhang AI Innovation Belt: three true-scale segments (north, middle, south) with legend, scale bar and north arrow](assets/figures/site-overview.png)

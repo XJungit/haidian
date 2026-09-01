@@ -73,7 +73,7 @@
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 10705773,
+      "total_bytes": 10719579,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -155,7 +155,7 @@
           "standard": 4,
           "depth": 18,
           "data": 11,
-          "metric": 6
+          "metric": 8
         }
       }
     },
