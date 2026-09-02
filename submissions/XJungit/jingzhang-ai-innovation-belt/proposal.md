@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「以人为本」为纲，把百年京张铁路遗产重新交还给在此生活、工作、创造的人。方案用京张遗址公园地面缝合带把被轨道割裂的城市重新连成可步行的日常创新街区，并以众智园、AI原点社区、大钟寺三处重点区作为可落地、可复核的空间载体。所有边界为 provisional，仅用于生成与讨论。"
 tracks: ["ai-origin-community", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.14"
 ---
 
 # 京张立人——以人为本的百年京张AI创新带城市设计

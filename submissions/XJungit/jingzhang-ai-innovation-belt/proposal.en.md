@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Putting human-centeredness first: returning the century-old Jing-Zhang railway heritage to the people who live, work and create here. A ground-level stitching belt along the Jing-Zhang Heritage Park reconnects the city fragmented by rail into walkable everyday innovation blocks, with Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi as implementable, auditable spatial anchors. All boundaries are provisional, for generation and discussion only."
 tracks: ["ai-origin-community", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.14"
 ---
 
 # Jing-Zhang Standing for People — A Human-Centered Urban Design for the Centennial Jing-Zhang AI Innovation Belt
